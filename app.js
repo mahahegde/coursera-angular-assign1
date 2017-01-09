@@ -21,6 +21,13 @@
       }else {
         $scope.message = "Too much!"
       }
+      if ( count ) {
+        $scope.messageStyle = { color: "green" };
+        $scope.boxStyle = { 'border-color': "green", 'border-style': "solid" };
+      } else {
+        $scope.messageStyle = { color: "red" };
+        $scope.boxStyle = { 'border-color': "red", 'border-style': "solid" };
+      }
     };
   }
 })();
