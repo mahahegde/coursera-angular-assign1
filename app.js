@@ -9,7 +9,7 @@
     $scope.checkLunchMenu = function () {
       var count = 0;
       // Check for entered string to contain at least a non-whitespace character
-      if ( /\S+/.test($scope.lunchMenu) ) {
+      if ( (typeof $scope.lunchMenu != 'undefined') && /\S+/.test($scope.lunchMenu) ) {
         // Split the string at comma
         count = $scope.lunchMenu.split(",").length
       }
